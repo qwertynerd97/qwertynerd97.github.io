@@ -1,0 +1,104 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Elli Howard - Experience</title>
+
+		<!-- Font Awesome Integration for Icons -->
+		<!-- Maybe replace with local integration instad of offsite js -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+		<!-- Link native stylesheet -->
+		<link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="style.css"/>
+		<!-- Link to mobile stylesheet -->
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="phone.css" />
+
+		<!-- Link to mobile menu javascript -->
+		<script src="menu.js"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<div class="header">
+			<a class="homeLink" href="index.html">Elli Howard</a>
+			<a class="skip" href="#mainContent">Skip to Content</a>
+			<button class="mobile menuBurger" onclick="showHideMenu()"><span class="fas fa-bars fa-4x"></span></button>
+		</div>
+
+		<!-- Navigation Menu -->
+		<div id="menuBar">
+			<a href="biography.html">
+				<div class="menuButton">
+					<p>Biography</p>
+				</div>
+			</a>
+			<a href="experience.html">
+				<div class="current menuButton">
+					<p>Experience</p>
+				</div>
+			</a>
+			<a href="interests.html">
+				<div class="menuButton">
+					<p>Interests</p>
+				</div>
+			</a>
+			<a href="resources.html">
+				<div class="menuButton">
+					<p>Resources</p>
+				</div>
+			</a>
+		</div>
+
+		<!-- Main Content -->
+		<div id="mainContent">
+			<h1>Professional Experience</h1>
+			<div class="left">
+			<h2>Skills</h2>
+				<ul>
+					<li>Java</li>
+					<li>C</li>
+					<li>C++</li>
+					<li>Python</li>
+					<li>PHP</li>
+					<li>HTML</li>
+					<li>Android App Development</li>
+					<li>Adobe Photoshop</li>
+					<li>Adobe Inventor</li>
+				</ul>
+			</div>
+			<div class="left">
+			<h2>Currently Learning</h2>
+				<ul>
+					<li>JavaScript</li>
+					<li>Ruby</li>
+					<li>iOS App Development</li>
+				</ul>
+			</div>
+			<div class="gallery">
+				<h2>Projects</h2>
+				<div class="galleryBlock">
+					<a href="rivercenter.html">
+						<img aria-hidden="true" alt="" class="galleryImg" src="assets/thumbnails/river_center.png"/>
+						<p>River Center Mobile</p>
+					</a>
+				</div>
+				<div class="galleryBlock">
+					<a href="plo.html">
+						<img aria-hidden="true" alt="" class="galleryImg" src="assets/thumbnails/plo.png"/>
+						<p>Virtual PL/0</p>
+					</a>
+				</div>
+				<div class="galleryBlock">
+					<a href="hackpack.html">
+						<img aria-hidden="true" alt="" class="galleryImg" src="assets/thumbnails/hackpack.png"/>
+						<p>Programming Team Hackpack</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<p>Contact Elli Howard:</p>
+			<p class="indent"><a class="footerLink" href="mailto:erhoward97@gmail.com">Email: erhoward97@gmail.com</a> | <a class="footerLink" href="tel:15616761486">Phone: (561) 676-1486</a></p>
+		</div>
+	</body>
+</html>

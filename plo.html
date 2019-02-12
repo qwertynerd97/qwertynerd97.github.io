@@ -1,0 +1,93 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Elli Howard - PL/0</title>
+
+		<!-- Font Awesome Integration for Icons -->
+		<!-- Maybe replace with local integration instad of offsite js -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+		<!-- Link native stylesheet -->
+		<link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="style.css"/>
+		<!-- Link to mobile stylesheet -->
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="phone.css" />
+
+		<!-- Link to mobile menu javascript -->
+		<script src="menu.js"></script>
+		<!-- Link to slideshow javascript -->
+		<script src="slideshow.js"></script>
+	</head>
+	<body onload="showPics(0)">
+		<!-- Header -->
+		<div class="header">
+			<a class="homeLink" href="index.html">Elli Howard</a>
+			<a class="skip" href="#mainContent">Skip to Content</a>
+			<button class="mobile menuBurger" onclick="showHideMenu()"><span class="fas fa-bars fa-4x"></span></button>
+		</div>
+
+		<!-- Navigation Menu -->
+		<div id="menuBar">
+			<a href="biography.html">
+				<div class="menuButton">
+					<p>Biography</p>
+				</div>
+			</a>
+			<a href="experience.html">
+				<div class="menuButton">
+					<p>Experience</p>
+				</div>
+			</a>
+			<a href="interests.html">
+				<div class="menuButton">
+					<p>Interests</p>
+				</div>
+			</a>
+			<a href="resources.html">
+				<div class="menuButton">
+					<p>Resources</p>
+				</div>
+			</a>
+		</div>
+
+		<!-- Main Content -->
+		<div id="mainContent">
+
+			<!-- Slideshow (Hidden for textreaders) -->
+			<div id="container" class="slideshow" aria-hidden="true">
+				<img class="slideImage" src="assets/slideshows/plo/slide_1.png"/>
+				<img class="slideImage" src="assets/slideshows/plo/slide_2.png"/>
+				<img class="slideImage" src="assets/slideshows/plo/slide_3.png"/>
+
+				<button class="leftButton" onClick="showPics(-1)"><</button>
+				<button class="rightButton" onClick="showPics(1)">></button>
+			</div>
+
+			<h1>Virtual PL/0</h1>
+			<div class="desktop accessLinks">
+				<h2 class="boxHeader">Access this Project</h2>
+				<a href="https://github.com/qwertynerd97/virtual-pl0"><img class="badge" alt="Get code from GitHub" src="assets/github.png"/></a>
+			</div>
+			<p class="description">The virtual PL/0 project emulates the basic functionality of the PL/0 language in C.  It reads in PL/0 code from a text file, scans it into distinct symbols, and then compiles those symbols into machine code.  It also runs the machine code within the emulator.  The compiler uses a naïve, greedy implementation, with no boost to efficiency.  The machine code emulator simulates a stack-and-register architecture to run the code.</p>
+			<h2>Implementation</h2>
+			<ul>
+				<li>C</li>
+				<li>Compiler Design</li>
+				<li>Virtual Machine Design</li>
+				<li>Scanning and Parsing</li>
+				<li>Stack Implementation</li>
+				<li>Register Implementation</li>
+				<li>Educational Work</li>
+			</ul>
+			<div class="mobile accessLinks">
+				<h2 class="boxHeader">Access this Project</h2>
+				<a href="https://github.com/qwertynerd97/virtual-pl0"><img class="badge" alt="Get code from GitHub" src="assets/github.png"/></a>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<p>Contact Elli Howard:</p>
+			<p class="indent"><a class="footerLink" href="mailto:erhoward97@gmail.com">Email: erhoward97@gmail.com</a> | <a class="footerLink" href="tel:15616761486">Phone: (561) 676-1486</a></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Elli Howard - River Center</title>
+
+		<!-- Font Awesome Integration for Icons -->
+		<!-- Maybe replace with local integration instad of offsite js -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+		<!-- Link native stylesheet -->
+		<link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="style.css"/>
+		<!-- Link to mobile stylesheet -->
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="phone.css" />
+
+		<!-- Link to slideshow javascript -->
+		<script src="slideshow.js"></script>
+		<!-- Link to mobile menu javascript -->
+		<script src="menu.js"></script>
+	</head>
+	<body onload="showPics(0)">
+		<!-- Header -->
+		<div class="header">
+			<a class="homeLink" href="index.html">Elli Howard</a>
+			<a class="skip" href="#mainContent">Skip to Content</a>
+			<button class="mobile menuBurger" onclick="showHideMenu()"><span class="fas fa-bars fa-4x"></span></button>
+		</div>
+
+		<!-- Navigation Menu -->
+		<div id="menuBar">
+			<a href="biography.html">
+				<div class="menuButton">
+					<p>Biography</p>
+				</div>
+			</a>
+			<a href="experience.html">
+				<div class="menuButton">
+					<p>Experience</p>
+				</div>
+			</a>
+			<a href="interests.html">
+				<div class="menuButton">
+					<p>Interests</p>
+				</div>
+			</a>
+			<a href="resources.html">
+				<div class="menuButton">
+					<p>Resources</p>
+				</div>
+			</a>
+		</div>
+
+		<!-- Main Content -->
+		<div id="mainContent">
+			<!-- Slideshow (Hidden for textreaders) -->
+			<div id="container" class="slideshow" aria-hidden="true">
+				<img class="slideImage" src="assets/slideshows/river_center/slide_1.png"/>
+				<img class="slideImage" src="assets/slideshows/river_center/slide_2.png"/>
+				<img class="slideImage" src="assets/slideshows/river_center/slide_3.png"/>
+
+				<button class="leftButton" onClick="showPics(-1)"><</button>
+				<button class="rightButton" onClick="showPics(1)">></button>
+			</div>
+			<h1>River Center Mobile</h1>
+			<div class="desktop accessLinks">
+				<h2 class="boxHeader">Access this Project</h2>
+				<a href="https://play.google.com/store/apps/details?id=org.loxahatcheeriver.rivercenter&hl=en"><img class="badge" alt="Get it on Google Play" src="assets/googleplay.png"/></a>
+				<a href="https://github.com/qwertynerd97/river-center-mobile"><img class="badge" alt="Get code from GitHub" src="assets/github.png"/></a>
+			</div>
+			<p class="description">River Center Mobile creates an interactive, mobile experience for visitors to the Loxahatchee River Center.  They can listen as an audio tour walks them through each of the exhibits in the Loxahatchee River Center, and learn more about the environment of the river, as well as engage their minds with an interactive scavenger hunt that tests their knowledge of each exhibit. Furthermore, the app includes a detailed walkthrough of the outdoor butterfly garden, with information about each of Florida's native plants.</p>
+			<h2>Implementation</h2>
+			<ul>
+				<li>Android Application</li>
+				<li>Java</li>
+				<li>Multimedia Integration</li>
+				<li>Not-for-Profit Work</li>
+			</ul>
+			<div class="mobile accessLinks">
+				<h2 class="boxHeader">Access this Project</h2>
+				<a href="https://play.google.com/store/apps/details?id=org.loxahatcheeriver.rivercenter&hl=en"><img class="badge" alt="Get it on Google Play" src="assets/googleplay.png"/></a>
+				<a href="https://github.com/qwertynerd97/river-center-mobile"><img class="badge" alt="Get code from GitHub" src="assets/github.png"/></a>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<p>Contact Elli Howard:</p>
+			<p class="indent"><a class="footerLink" href="mailto:erhoward97@gmail.com">Email: erhoward97@gmail.com</a> | <a class="footerLink" href="tel:15616761486">Phone: (561) 676-1486</a></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Elli Howard - Biography</title>
+
+		<!-- Font Awesome Integration for Icons -->
+		<!-- Maybe replace with local integration instad of offsite js -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+		<!-- Link native stylesheet -->
+		<link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="style.css"/>
+		<!-- Link to mobile stylesheet -->
+		<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="phone.css" />
+
+		<!-- Link to mobile menu javascript -->
+		<script src="menu.js"></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<div class="header">
+			<a class="homeLink" href="index.html">Elli Howard</a>
+			<a class="skip" href="#mainContent">Skip to Content</a>
+			<button class="mobile menuBurger" onclick="showHideMenu()"><span class="fas fa-bars fa-4x"></span></button>
+		</div>
+
+		<!-- Navigation Menu -->
+		<div id="menuBar">
+			<a href="biography.html">
+				<div class="current menuButton">
+					<p>Biography</p>
+				</div>
+			</a>
+			<a href="experience.html">
+				<div class="menuButton">
+					<p>Experience</p>
+				</div>
+			</a>
+			<a href="interests.html">
+				<div class="menuButton">
+					<p>Interests</p>
+				</div>
+			</a>
+			<a href="resources.html">
+				<div class="menuButton">
+					<p>Resources</p>
+				</div>
+			</a>
+		</div>
+
+		<!-- Main Content -->
+		<div id="mainContent">
+			<img alt="Elli Howard" class="headshot" src="assets/professional_headshot.jpg"/>
+			<div class="bioStatement">
+				<h1>Biography</h1>
+				<p class="indent">Elli Howard is a sophomore Computer Science and Biology student at the University of Central Florida.  They are currently employed with UCF's Programming Team and the UCF Techrangers.  They plan to continue schooling with a Masters degree after they get their Bachelors, and then they want to continue on to a career in automated plant maintenance.  They hope to someday create modular, affordable technology to automate farming on both small and large scales.</p>
+			</div>
+
+			<div class="goals">
+				<h2>Current Goals</h2>
+				<ul>
+					<li>Intern with tech company</li>
+					<li>Work in biology lab</li>
+					<li>Intern in biology field</li>
+					<li>Expand knowledge of computer vision</li>
+					<li>Expand knowledge of modular design</li>
+					<li>Receive Bachelors degree in Computer Science and Biology</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<p>Contact Elli Howard:</p>
+			<p class="indent"><a class="footerLink" href="mailto:erhoward97@gmail.com">Email: erhoward97@gmail.com</a> | <a class="footerLink" href="tel:15616761486">Phone: (561) 676-1486</a></p>
+		</div>
+	</body>
+</html>
